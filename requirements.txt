@@ -1,0 +1,5 @@
+pyyaml
+feedparser
+requests
+beautifulsoup4
+notion-client

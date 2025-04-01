@@ -1,0 +1,36 @@
+# config.yaml 
+rss_sources:
+  - name: TechCrunch AI
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    type: "rss"
+    category: "趋势新闻"
+  - name: MIT Tech Review AI
+    url: "https://www.technologyreview.com/feed/"
+    type: "rss"
+    category: "趋势新闻"
+
+api_sources:
+  - name: Twitter（OpenAI）
+    user_id: "4398626122"
+    type: "api"
+    category: "趋势新闻"
+    headers:
+      Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAABM20QEAAAAA0tIPi8TsPVWdBk3IwZrB6mMJ5bw%3Dk6cUnWIHS44kbIHQYmLD9zNUgOKzpKeD66myIzhkQLay2NZGpu"
+
+crawler_sources:
+  - name: DeepMind
+    url: "https://deepmind.com/blog"
+    type: "crawler"
+    category: "案例新闻"
+
+# 关键词过滤及标签定义
+keywords:
+  course: ["course", "learn", "training", "MOOC"]
+  case: ["case study", "use case", "success", "deployment"]
+  trend: ["launch", "announces", "update", "trend"]
+
+# Notion 配置（如选择使用Notion存储数据）
+notion:
+  enable: true
+  token: "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"
+  database_id: "1c7d13292d8080cf9170eb6680fc6592"
